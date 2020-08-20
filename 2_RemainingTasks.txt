@@ -1,0 +1,50 @@
+2020-01-14
+***********
+
+Presentation:
+-------------
+- Prepare Category and tasks (for urgency demo)
+- Size of text of slide SV
+- Remove unnecessary slides (agenda, Demo, ..?)
+- Partie demo (qui ?)
+
+
+General :
+---------
+- DONE : Create 0_Readme.txt file with information
+- DONE : New task can only be in a category (not only in high Priority)
+		Cannot add if we are in High Priority
+		Adapt message ? Task could not be added directly under High priority category
+- DONE : How to use Urgency value :
+- DONE : Application name : TODO-List (in presentation and source)
+- DONE : Adapt description in input fields two have same idea :
+ 	- Enter new category description
+	- Enter new task description
+	- Enter due date
+
+In categories.js :
+------------
+ - DONE : Remove Localstorage function used (not used)
+ - DONE : buildAndDisplay called too many times
+
+In tasks.js :
+------------
+ - DONE : Actions (change High priority, add, remove) call informAboutTasksChanges();
+ - DONE : Current method with AddTask create circular [Task] (see console) !!
+ - DONE : If no description provided, do not add task (undefined description)
+ - DONE : If task is removed from Priority, remove also from related category !
+ - DONE : Create functions to add fake tasks in categories
+
+Display :
+---------
+- On startup, remove list of categories (in projectstyle.js)
+- DONE : Display High priority Category with more impact
+- DONE : Display number of task on right side in state of (x)
+		Better : Only tasks not completed !
+- DONE : Adapt height of two Category buttons to the same look than for tasks
+- DONE : Increase in task display the width of task description and reduce the width of due date.
+- DONE : Move Category "Add" button to the right to align on the right
+- DONE : Add a "Task" Header on the task side (like the Categories on the left side) with another color
+		Nice to have : By selecting a categorie we could then display in this task header the categorie description selected
+		Align on the same line the "Add" Categories inputs and buttons and the tasks inputs and buttons
+- DONE : Remove border on Div (test how it looks like)
